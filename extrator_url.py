@@ -7,7 +7,7 @@ class ExtratorUrl:
         return url.strip()
     
     def valida_url(self):
-        if self.url == '':
+        if not self.url:
             raise ValueError("url not found")
 
     def get_url_base(self):
